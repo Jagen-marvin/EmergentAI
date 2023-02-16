@@ -2307,7 +2307,7 @@ button {
 
 .form-inner {
     position: relative;
-    padding-top: 120px;
+    padding-top: auto;
 }
 
 #googleMap {
@@ -2322,7 +2322,7 @@ button {
     border-radius: 10px;
     background: #fff;
     padding: 30px;
-    margin-top: -100px;
+    margin-top: auto;
     z-index: 33;
     position: relative;
 }
@@ -2430,7 +2430,7 @@ button {
 
 .floating-label-field--s3:focus,
 .floating-label-field--s3:not(:placeholder-shown) {
-    border-color: #f79524;
+    border-color: rgb(64, 64, 179);
 }
 
 .floating-label-field--s3:focus+.floating-label,
@@ -2440,7 +2440,7 @@ button {
     -webkit-transform: translate(0, -1.7em) scale(.9);
     -ms-transform: translate(0, -1.7em) scale(.9);
     transform: translate(0, -1.7em) scale(.9);
-    color: #f79524;
+    color: rgb(64, 64, 179);
     background-color: #fff;
     font-weight: 500;
 }
@@ -2474,7 +2474,7 @@ button {
 }
 
 .form-buttons input[type="submit"] {
-    background: #f79524;
+    background: rgb(64, 64, 179);
     -webkit-box-shadow: 0px 10px 18px 0px rgba(75, 61, 167, 0.3);
     box-shadow: 0px 10px 18px 0px rgba(75, 61, 167, 0.3);
     color: #fff;
@@ -2523,7 +2523,7 @@ button {
     width: 35px;
     height: 35px;
     border: none;
-    color: #f79524;
+    color: rgb(64, 64, 179);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2544,7 +2544,7 @@ button {
 }
 
 .footer .theme-details ul li a i:hover {
-    background: #f79524;
+    background: rgb(64, 64, 179);
     color: #fff;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -2576,7 +2576,7 @@ button {
 
 .footer-copyright .fast-links ul li a:hover,
 .sitemap ul li a:hover {
-    color: #f79524;
+    color: rgb(64, 64, 179);
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -2595,7 +2595,7 @@ button {
     -webkit-transition: all .35s ease;
     -o-transition: all .35s ease;
     transition: all .35s ease;
-    background: #f79524;
+    background: rgb(64, 64, 179);
 }
 
 .footer-copyright .copyright-txt span a:hover:after,
@@ -2619,11 +2619,11 @@ button {
 }
 
 .contact-details ul li a {
-    color: #f79524;
+    color: rgb(64, 64, 179);
 }
 
 .contact-details ul li i {
-    color: #f79524;
+    color: rgb(64, 64, 179);
     font-size: 30px;
     margin-right: 10px;
 }

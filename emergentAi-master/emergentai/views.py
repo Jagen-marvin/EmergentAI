@@ -2,8 +2,8 @@ from django.http import HttpResponse;
 from django.shortcuts import render
 
 def home(request):
-    return render(request,'index.html')
+    return render(request,'index.html', {})
     
-def singleproject(request):
-    return render(request,'single.html')
+def cervical(request):
+    return render(request,'index-cervical.html',{})
     
