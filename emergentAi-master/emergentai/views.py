@@ -7,3 +7,9 @@ def home(request):
 def cervical(request):
     return render(request,'index-cervical.html',{})
     
+def tuberculosis(request):
+    return render(request,'index-tuberculosis.html',{})
+
+def yogera(request):
+    return render(request,'index-yogera.html',{})
+    

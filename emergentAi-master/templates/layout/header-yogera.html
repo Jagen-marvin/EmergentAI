@@ -1,5 +1,5 @@
 <header id="header" class="header" style="
-            background-image: url('./assets/images/ai-ba.jpg');
+            background-image: url('./assets/images/sound.jpg');
             background-size: cover;
             background-position: center;
             background-color: white;
@@ -12,7 +12,7 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'Home'%}">
                 <!-- Logo -->
                 <img src="./assets/images/logo.png" alt="EmergentAi" title="EmergentAi" />
             </a>
@@ -22,19 +22,20 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">Home</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">About Us</span>
                             </div>
                         </a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="link-ico title">Projects</span>
@@ -46,7 +47,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">Our Team</span>
                             </div>
@@ -55,8 +56,8 @@
                 </ul>
                 <ul class="navbar-nav nav-buttons ml-auto list-unstyled">
                     <li class="nav-item nav-trial">
-                        <a id="btn-open-account" class="bttn btn-purple" href="#contact">
-                            Contact Us
+                        <a id="btn-open-account" class="bttn btn-purple" href="#contactus">
+                        Contact Us
                         </a>
                     </li>
                 </ul>
@@ -73,15 +74,15 @@
             <div class="row" >
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="head-txt" >
-                        <h2 class="h1 text-left">Elevate Your Operations with AI technology</h2>
-                        <p class="text-justify">
-                            At EmergentAi, we're passionate about harnessing the power of AI to help all types of institutions, businesses, and organizations optimize their operations and stay ahead in a rapidly evolving landscape. Our cutting-edge solutions are designed to streamline processes, improve decision-making, and unlock new opportunities for growth. Whether you're looking to drive efficiency, stay competitive, or transform your organization, our advanced AI technology is here to help
+                        <h2 class="h1 text-left">Yogera application</h2>
+                        <p class="text-justify text-color">
+                            The Yogera application is a Common Voice-powered platform that uses crowdsourcing to collect text and audio data for building natural language processing (NLP) applications in Luganda, a local language in Uganda. The app allows native speakers to record and validate voice data for use in natural language processing (NLP) applications, ultimately leading to the development of more accurate voice recognition and language processing technologies.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="head-img">
-                        <img class="img-fluid" src="./assets/images/hero_image.png" alt="hero app" style="object-fit:contain;"/>
+                        <img class="img-fluid" src="./assets/images/common-removebg.png" alt="gynocular" style="object-fit:cover; padding-left: 10rem;"/>
                     </div>
                 </div>
             </div>

@@ -483,7 +483,6 @@ button {
 .navbar .navbar-nav .dropdown-item:focus,
 .navbar .navbar-nav .dropdown-item:hover {
     background-color: transparent !important;
-    color: #f79524;
     -webkit-transition: all 200ms ease-in-out 0ms;
     -o-transition: all 200ms ease-in-out 0ms;
     transition: all 200ms ease-in-out 0ms;
