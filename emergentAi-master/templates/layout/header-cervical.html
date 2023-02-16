@@ -1,5 +1,5 @@
 <header id="header" class="header" style="
-            background-image: url('./assets/images/cervical.jpg');
+            background-image: url('./assets/images/medical-bg.jpg');
             background-size: cover;
             background-position: center;
             background-color: white;
@@ -12,7 +12,7 @@
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="main.html">
+            <a class="navbar-brand" href="{% url 'Home'%}">
                 <!-- Logo -->
                 <img src="./assets/images/logo.png" alt="EmergentAi" title="EmergentAi" />
             </a>
@@ -29,29 +29,22 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">About Us</span>
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <div class="link-ico">
-                                <span class="title">Contact Us</span>
-                            </div>
-                        </a>
-                    </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">Our Projects</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">
+                        <a class="nav-link" href="{%url 'Home'%}">
                             <div class="link-ico">
                                 <span class="title">Our Team</span>
                             </div>
@@ -78,9 +71,9 @@
             <div class="row" >
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="head-txt" >
-                        <h2 class="h1 text-left">Elevate Your Operations with AI technology</h2>
-                        <p class="text-justify">
-                            At EmergentAi, we're passionate about harnessing the power of AI to help all types of institutions, businesses, and organizations optimize their operations and stay ahead in a rapidly evolving landscape. Our cutting-edge solutions are designed to streamline processes, improve decision-making, and unlock new opportunities for growth. Whether you're looking to drive efficiency, stay competitive, or transform your organization, our advanced AI technology is here to help
+                        <h2 class="h1 text-left">Cervical Cancer project</h2>
+                        <p class="text-justify text-color">
+                            CACX is an AI-powered mobile application that uses advanced machine learning algorithms to analyze and interpret cervical cancer screening results. It provides accurate, reliable, and affordable diagnosis, enabling women to take proactive steps towards their health and well-being.
                         </p>
                     </div>
                 </div>
