@@ -1,0 +1,71 @@
+<header id="header" class="header" style="
+            background-image: url('./assets/images/medical-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center; ">
+    <!-- Start Navbar -->
+    <!-- Start Header -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'Home'%}">
+                <!-- Logo -->
+                <img src="./assets/images/logo.png" alt="EmergentAi" title="EmergentAi" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'Home'%}">
+                            <div class="link-ico">
+                                <span class="title">Home</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'Home'%}">
+                            <div class="link-ico">
+                                <span class="title">About Us</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="link-ico title">Projects</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="{% url 'cervical' %}">Cervical Screening</a></li>
+                            <li><a class="dropdown-item" href="{% url 'tuberculosis' %}">Tuberculosis screening</a></li>
+                            <li><a class="dropdown-item" href="{% url 'yogera' %}">Yogera application</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url 'Home'%}">
+                            <div class="link-ico">
+                                <span class="title">Our Team</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-buttons ml-auto list-unstyled">
+                    <li class="nav-item nav-trial">
+                        <a id="btn-open-account" class="bttn btn-purple" href="#contactus">
+                        Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+    <!-- End Navbar -->
+
+</header>

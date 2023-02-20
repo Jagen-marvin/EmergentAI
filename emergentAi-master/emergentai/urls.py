@@ -24,6 +24,7 @@ urlpatterns = [
     path('cervical',views.cervical, name="cervical"),
     path('tuberculosis',views.tuberculosis, name="tuberculosis"),
     path('yogera',views.yogera, name="yogera"),
+    path('thanks',views.thanks, name="thanks"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

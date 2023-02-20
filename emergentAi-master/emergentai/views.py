@@ -12,4 +12,6 @@ def tuberculosis(request):
 
 def yogera(request):
     return render(request,'index-yogera.html',{})
-    
+
+def thanks(request):
+    return render(request,'index-thanks.html',{})

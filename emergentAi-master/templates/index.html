@@ -146,8 +146,7 @@ justify-content: center; ">
                 <tr>
                     <th scope="col"><i class="fa fa-user"></i></th>
                     <th scope="col">Name</th>
-                    <th scope="col">background</th>
-                    <th scope="col">email</th>
+                    <th scope="col">Role</th>
                 </tr>
             </thead>
 
@@ -156,41 +155,35 @@ justify-content: center; ">
             <tbody>
                 <th scope="row">1</th>
                 <td>Dr. Andrew Katumba</td>
-                <td>Ph.D. Degree in Photonics Engineering, Photonics Research Group, Ghent University-imec</td>
-                <td>katraxuk@gmail.com</td>  
+                <td>Lead Engineer</td> 
 
             <tbody>
                 <th scope="row">2</th>
                 <td>Dr. Joyce Nakatumba-Nabende</td>
-                <td>PhD in Computer Science Eindhoven Area, Netherlands</td>
-                <td>jnakatumba@gmail.com</td>
+                <td>Lead Engineer</td>
                 
 
             <tbody>
                 <th scope="row">3</th>
                 <td>Dr. Cosmas Mwikirize</td>
-                <td>PhD in Biomedical/Medical Engineering Rutgers University, New Brunswick</td>
-                <td>mwikirize.cosmas@gmail.com</td>                
+                <td>Lead Engineer</td>                
 
             <tbody>
                 <th scope="row">4</th>
                 <td>Ms. Samiiha Nalwooga</td>
-                <td>Msc. in Computer and Systems Engineering, Stockholm University, Sweden.</td>
-                <td>nsamiiha@gmail.com</td>
+                <td>Machine Learning Engineer</td>
                 
 
             <tbody>
                 <th scope="row">5</th>
                 <td>Eng. Michael Rutalo</td>
-                <td>Msc. in Computer Engineering, Makerere University, Kampala Uganda.</td>
-                <td>michael.rutalo@gmail.com</td>
+                <td>Machine Learning Engineer</td>
                 
 
             <tbody>
                 <th scope="row">6</th>
                 <td>Mr. Jagen Marvin</td>
-                <td>Bsc. in Electrical Engineering, Makerere University, Kampala Uganda.</td>
-                <td>jagenmarvin1@gmail.com</td>
+                <td>Machine Learning Engineer</td>
                           
         </table>
     </div>
@@ -291,7 +284,7 @@ justify-content: center; ">
 
                             <p>Please contact us if you need any further information</p>
                         </div>
-                        <form autocomplete="off" action="http://alaa-ahmed.com/hotan/contact-us.html#">
+                        <form autocomplete="off" action="{% url 'thanks' %}">
                             <div class="row">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">
