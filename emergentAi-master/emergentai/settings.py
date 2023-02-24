@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ly=h8dm_*b2@b2q!u#1kwdavqeaw*l6_((ssob9y*#a2uo5m-g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['emergentai.ug', 'www.emergentai.ug', '104.198.29.123']
+ALLOWED_HOSTS = ['emergentai.ug', 'www.emergentai.ug','emergentai.net','104.198.29.123']
 
 
 # Application definition
