@@ -73,7 +73,7 @@ justify-content: center; ">
 
                             <p>Please contact us if you need any further information</p>
                         </div>
-                        <form autocomplete="off" action="{% url 'thanks' %}">
+                        <form autocomplete="off" action="{% url 'thanks' %}" method = "post">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-xl-12 col-md-6">
