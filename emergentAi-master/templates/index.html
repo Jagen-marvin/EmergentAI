@@ -118,7 +118,7 @@ justify-content: center; ">
                         <a class="post-title" href="{% url 'yogera' %}">Yogera application</a>
 
                         <p class="text-justify">
-                            The Yogera application is a transformative common voice platform designed to support the Luganda local language. Yogera enables developers to build accurate natural language processing (NLP) models by collecting and utilizing an extensive and diverse
+                            The Yogera application is a transformative NLP platform designed to support the Luganda local language. Yogera enables developers to build accurate natural language processing (NLP) models by collecting and utilizing an extensive and diverse
                             range of text-audio data contributed by a global community of speakers.
                         </p>
                         <p><a href="{% url 'yogera' %}">Learn more</a></p>
@@ -283,12 +283,13 @@ justify-content: center; ">
 
                             <p>Please contact us if you need any further information</p>
                         </div>
-                        <form autocomplete="off" action="{% url 'thanks' %}">
+                        <form autocomplete="off" action="{% url 'thanks' %}" method="post">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">
                                         <div class="floating-label-wrap">
-                                            <input type="text" class="floating-label-field floating-label-field--s3" id="field-1" placeholder="Full Name">
+                                            <input type="text" name="message-name" class="floating-label-field floating-label-field--s3" id="field-1" placeholder="Full Name">
                                             <label for="field-1" class="floating-label">Full Name</label>
                                         </div>
                                         <!-- .floating-label-wrap -->
@@ -297,7 +298,7 @@ justify-content: center; ">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">
                                         <div class="floating-label-wrap">
-                                            <input type="email" class="floating-label-field floating-label-field--s3" id="field-2" placeholder="E-Mail Address">
+                                            <input type="email" name="message-email" class="floating-label-field floating-label-field--s3" id="field-2" placeholder="E-Mail Address">
                                             <label for="field-2" class="floating-label">E-Mail Address</label>
                                         </div>
                                         <!-- .floating-label-wrap -->
@@ -306,7 +307,7 @@ justify-content: center; ">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">
                                         <div class="floating-label-wrap">
-                                            <input type="text" class="floating-label-field floating-label-field--s3" id="field-3" placeholder="Subject">
+                                            <input type="text" name="message-subject" class="floating-label-field floating-label-field--s3" id="field-3" placeholder="Subject">
                                             <label for="field-3" class="floating-label">Subject</label>
                                         </div>
                                         <!-- .floating-label-wrap -->
@@ -315,7 +316,7 @@ justify-content: center; ">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">
                                         <div class="floating-label-wrap">
-                                            <input type="text" class="floating-label-field floating-label-field--s3" id="field-4" placeholder="Phone Number">
+                                            <input type="text" name="message-number" class="floating-label-field floating-label-field--s3" id="field-4" placeholder="Phone Number">
                                             <label for="field-4" class="floating-label">Phone Number</label>
                                         </div>
                                         <!-- .floating-label-wrap -->
@@ -324,7 +325,7 @@ justify-content: center; ">
                                 <div class="col-xl-12">
                                     <div class="form-group">
                                         <div class="floating-label-wrap">
-                                            <textarea class="floating-label-field floating-label-field--s3" id="field-5" placeholder="Your Message"></textarea>
+                                            <textarea name="message" class="floating-label-field floating-label-field--s3" id="field-5" placeholder="Your Message"></textarea>
                                             <label for="field-5" class="floating-label">Your Message</label>
                                         </div>
                                     </div>
