@@ -16,26 +16,28 @@ def yogera(request):
 
 def thanks(request):
     return render(request,'index-thanks.html',{})
+
+def services(request):
+    return render(request,'index-services.html',{})
     
 def contact(request):
-    if requst.method == "post":
-        message_name = request.post['message-name']
-        message_email = request.post['message-email']
-        message_subject = request.post['message-subject']
-        message_number = request.post['message-number']
-        message = request.post['message']
+    if request.method == "post":
+        message_name = request.POST['message-name']
+        message_email = request.POST['message-email']
+        message_subject = request.POST['message-subject']
+        message_number = request.POST['message-number']
+        message = request.POST['message']
         
         # send an email
         send_mail(
-        'Message from' + message_name, # subject
-        message, # message
-        message_email, # from email
-        ['info@emergentai.ug','jagenmarvin4@gmail.com'], # to email
-        
+            'Message from' + message_name, # subject
+            message, # message
+            message_email, # from email
+            ['info@emergentai.ug'], # to email
         )
         
         return render(request,'index-thanks.html',{})
       
-     else:
+    else:
         return render(request,'index-thanks.html',{})
         

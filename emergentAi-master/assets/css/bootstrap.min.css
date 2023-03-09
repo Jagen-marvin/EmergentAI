@@ -311,6 +311,14 @@ textarea {
     resize: vertical
 }
 
+.me-3 {
+    margin-right: 1rem !important;
+}
+
+.me-5 {
+    margin-right: 2rem !important;
+}
+
 fieldset {
     min-width: 0;
     padding: 0;
@@ -2706,8 +2714,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+    background-color: rgb(54, 54, 177);
+    border-color: rgb(54, 54, 177)
 }
 
 .btn-primary.focus,
@@ -8728,6 +8736,11 @@ button.bg-dark:hover {
     padding-top: 6rem!important
 }
 
+.pt-7,
+.py-6 {
+    padding-top: 9rem!important
+}
+
 .pr-5,
 .px-5 {
     padding-right: 3rem!important
@@ -10390,7 +10403,7 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #007bff!important
+    color: rgb(64, 64, 179)!important
 }
 
 a.text-primary:focus,

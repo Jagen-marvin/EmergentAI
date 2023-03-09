@@ -1,0 +1,41 @@
+{% load static %}
+
+<html lang="en">
+{% include 'layout/head-services.html' %}
+
+<!-- body -->
+
+<body style="overflow-y: visible;">
+    <!-- Header -->
+    {% include 'layout/header-services.html' %}
+    <!-- Header -->
+    {% block services %} {% endblock %}
+
+    <!-- Footer -->
+    {% include 'layout/footer.html' %}
+    <!-- End Footer -->
+    <!-- Start Back To Top-->
+    <!-- End Back To Top-->
+    <!-- JS Files -->
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap v4 -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <!-- Appear -->
+    <script src="./assets/js/jquery.appear.js"></script>
+    <!-- Lity -->
+    <script src="./assets/js/lity.min.js"></script>
+    <!-- Parallax -->
+    <script src="./assets/js/jquery-parallax.js"></script>
+
+    <!-- Core JS -->
+    <script src="./assets/js/core.js"></script>
+
+    <script src="./assets/js/loader.js" async=""></script>
+
+    <!-- Template Javascript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
