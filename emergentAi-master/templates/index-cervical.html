@@ -56,23 +56,34 @@ display: flex;
 align-items: center;
 justify-content: center; ">
     <div class="container">
-        <div class="form-area" >
+        <div class="form-area">
             <div class="form-inner">
                 <div class="form-box">
-                    <div class="form-side text-center">
-                        <div class="main-title">
-                            <h3 class="title">For more information, contact us
-                            </h3>
-                            <p>We’ll share more about our services and answer your questions as soon as we can.
-
-                            </p>
+                    <div class="form-side text-left">
+                        <div class="section-title position-relative pb-3 mb-4">
+                            <h3 class="text-left">Contact Us</h3>
+                            <h4 class="mb-0 text-left">For more information, please contact us.</h4>
+                        </div>
+                        <div class="row gx-3">
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                                <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                            </div>
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                                <h5 class="mb-4"><i class="fa fa-envelope text-primary me-3"></i>24 hrs support</h5>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 3rem; margin-top: 1rem;">Thank you for your interest in EmergentAI. Please fill out the form below to get in touch with us. We'll do our best to respond to your message within 24 hours.  Our support team is always ready to help you and will make every effort to respond to your message as soon as possible.</p>
+                        <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-icon d-flex align-items-center justify-content-center rounded me-5" style="width: 60px; height: 60px;">
+                                <i class="fa fa-envelope text-white"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="mb-2">Email to ask any question</h5>
+                                <h4 class="text-primary mb-0">info@emergentai.ug</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="form-side">
-                        <div class="main-title">
-
-                            <p>Please contact us if you need any further information</p>
-                        </div>
                         <form autocomplete="off" action="{% url 'thanks' %}">
                             <div class="row">
                                 <div class="col-xl-12 col-md-6">

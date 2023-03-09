@@ -1,18 +1,19 @@
 <header id="header" class="header" style="
-            background-image: url('./assets/images/medical-bg.jpg');
+            background-image: url('./assets/images/services.jpg');
             background-size: cover;
             background-position: center;
             background-color: white;
             height: auto;
             display: flex;
             align-items: center;
-            justify-content: center; ">
+            justify-content: center; 
+            padding-bottom: 8rem">
     <!-- Start Navbar -->
     <!-- Start Header -->
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'Home'%}">
+            <a class="navbar-brand" href="{% url 'Home' %}">
                 <!-- Logo -->
                 <img src="./assets/images/logo.png" alt="EmergentAi" title="EmergentAi" />
             </a>
@@ -22,39 +23,38 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'Home'%}">
+                        <a class="nav-link" href="{% url 'Home' %}">
                             <div class="link-ico">
                                 <span class="title">Home</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'Home'%}">
+                        <a class="nav-link" href="{% url 'Home' %}">
                             <div class="link-ico">
                                 <span class="title">About</span>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'Home'%}">
+                        <a class="nav-link" href="{% url 'Home' %}">
                             <div class="link-ico">
                                 <span class="title">Services</span>
                             </div>
                         </a>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="{% url 'Home' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="link-ico title">Products</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{% url 'cervical' %}">Cervical Screening</a></li>
+                            <li><a class="dropdown-item" href="{% url 'cervical' %}">Emergent AVI</a></li>
                             <li><a class="dropdown-item" href="{% url 'tuberculosis' %}">Tuberculosis screening</a></li>
                             <li><a class="dropdown-item" href="{% url 'yogera' %}">Yogera application</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'Home'%}">
+                        <a class="nav-link" href="{% url 'Home' %}">
                             <div class="link-ico">
                                 <span class="title">Team</span>
                             </div>
@@ -63,8 +63,8 @@
                 </ul>
                 <ul class="navbar-nav nav-buttons ml-auto list-unstyled">
                     <li class="nav-item nav-trial">
-                        <a id="btn-open-account" class="bttn btn-purple" href="#contactus">
-                        Contact Us
+                        <a id="btn-open-account" class="bttn btn-purple" href="#contact">
+                            Contact Us
                         </a>
                     </li>
                 </ul>
@@ -77,19 +77,19 @@
     
     <!-- Start Header Content -->
     <div class="head-content">
-        <div class="container">
+        <div class="container align-items-center">
             <div class="row" >
                 <div class="col-md-6 order-2 order-md-1">
                     <div class="head-txt" >
-                        <h2 class="h1 text-left">Emergent AVI</h2>
-                        <p class="text-left text-color">
-                            This AI-powered cervical cancer screening platform provides decision-making support for healthcare providers, accurately screening for pre-cancerous lesions within seconds using computer vision techniques. It is deployed on an Android mobile application, reducing human error and shortening turn-around time for screening.
+                        <h2 class="h1 text-left">Services</h2>
+                        <p class="text-justify text-md-left text-sm-left" style="font-size: 17px;">
+                            At EmergentAI, we are dedicated to helping our clients leverage the power of artificial intelligence to transform their businesses. Our team of experienced AI professionals works closely with each client to understand their unique needs and develop custom solutions that drive measurable results. Whether you need help with natural language processing, predictive analytics, intelligent automation, or any other aspect of AI, we have the expertise and resources to deliver top-quality solutions that help you achieve your goals. Contact us today to learn more about how we can help you harness the full potential of AI.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
                     <div class="head-img">
-                        <img class="img-fluid" src="./assets/images/Emergent AVI.png" alt="gynocular" style="object-fit:cover;"/>
+                        <img class="img-fluid" src="./assets/images/services.png" alt="gynocular" style="object-fit:cover;"/>
                     </div>
                 </div>
             </div>

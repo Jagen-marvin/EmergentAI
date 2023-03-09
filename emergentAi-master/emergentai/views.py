@@ -15,3 +15,6 @@ def yogera(request):
 
 def thanks(request):
     return render(request,'index-thanks.html',{})
+
+def services(request):
+    return render(request,'index-services.html',{})
