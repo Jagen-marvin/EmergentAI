@@ -233,7 +233,7 @@ margin-top: 5rem">
 <!-- End Clients -->
 
 <!-- Start Contact Us Page -->
-<section id="contact" class="contact-us-page" >
+<section id="contact" class="contact-us-page">
     <div class="container">
         <div class="form-area">
             <div class="form-inner">
@@ -263,7 +263,12 @@ margin-top: 5rem">
                         </div>
                     </div>
                     <div class="form-side">
-                        <form autocomplete="off" action="{% url 'thanks' %}">
+                        <div class="main-title">
+
+                            <p>Please contact us if you need any further information</p>
+                        </div>
+                        <form autocomplete="off" action="{% url 'thanks' %}" method="post">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-xl-12 col-md-6">
                                     <div class="form-group">

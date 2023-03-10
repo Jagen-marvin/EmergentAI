@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-ly=h8dm_*b2@b2q!u#1kwdavqeaw*l6_((ssob9y*#a2uo5m-g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['emergentai.ug', '104.198.29.123']
+ALLOWED_HOSTS = ['emergentai.ug', 'emergentai.net','104.198.29.123']
 
 
 # Application definition
@@ -75,13 +76,23 @@ WSGI_APPLICATION = 'emergentai.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'marvin',
+        'USER': 'admin',
+        'PASSWORD': 'adnin123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -125,6 +136,17 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'assets'),)
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# myaccount.google.com/lesssecureapps
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'emergentai.ug'
+# EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = ''
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'info@emergentai.ug'
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'info@emergentai.ug'
 
 # myaccount.google.com/lesssecureapps
 # Email settings
